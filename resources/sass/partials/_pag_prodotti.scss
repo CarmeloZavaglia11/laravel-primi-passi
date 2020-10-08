@@ -1,0 +1,42 @@
+.prodotti {
+    margin-top: 10vh;
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 4em;
+        }
+
+        .card {
+            position: relative;
+            align-self: center;
+            padding: 20px;
+            width: calc(100% / 4);
+
+            img {
+                max-width: 100%;
+                position: relative;
+            }
+
+            &:hover .info-card{
+                opacity: 1;
+            }
+
+            .info-card {
+                color: black;
+                background: rgba(255,255,255,0.5);
+                opacity: 0;
+                transition: 0.5s ease-in-out;
+            }
+        }
+    }
+}

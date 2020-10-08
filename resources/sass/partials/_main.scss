@@ -1,0 +1,32 @@
+// HOME
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('../../img/Sfondo2.jpg');
+    background-size: cover;
+    min-height: 90vh;
+    margin-top: 8vh;
+    &:hover p{
+        opacity: 1;
+    }
+
+    &:hover iframe{
+        opacity: 1;
+    }
+
+    p {
+        color: white;
+        opacity: 0;
+        font-size: 1.5em;
+        transition: 0.5s ease-in-out;
+        background-color: rgba(0,0,0,0.7);
+        padding: 10px;
+    }
+
+    iframe {
+        transition: 0.5s ease-in-out;
+        opacity: 0;
+    }
+}

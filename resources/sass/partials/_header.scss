@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+    box-shadow: 0 0 14px #000;
+
+    img {
+        max-width: 100px;
+    }
+
+    nav {
+        width: 20%;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            li {
+                display: inline-block;
+                a {
+                    padding: 10px;
+                    color: white;
+                    text-decoration: none;
+                    background-color: #002d75;
+                    border-radius: 10px;
+                    transition: 0.5s ease-in-out;
+                    &:hover {
+                        opacity: 0.8;
+                        padding: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

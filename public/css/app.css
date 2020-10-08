@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Piazzolla", serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+  box-shadow: 0 0 14px #000;
+}
+
+header img {
+  max-width: 100px;
+}
+
+header nav {
+  width: 20%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #002d75;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+header nav ul li a:hover {
+  opacity: 0.8;
+  padding: 12px;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  box-shadow: 0 0 14px #000;
+}
+
+footer img {
+  width: 100px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(/images/Sfondo2.jpg?2976292a42d1fb4e916f2e7ee33b0493);
+  background-size: cover;
+  min-height: 90vh;
+  margin-top: 8vh;
+}
+
+main:hover p {
+  opacity: 1;
+}
+
+main:hover iframe {
+  opacity: 1;
+}
+
+main p {
+  color: white;
+  opacity: 0;
+  font-size: 1.5em;
+  transition: 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+main iframe {
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.prodotti {
+  margin-top: 10vh;
+  background: #7F7FD5;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.prodotti .cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.prodotti .cards h2 {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.prodotti .cards .card {
+  position: relative;
+  align-self: center;
+  padding: 20px;
+  width: calc(100% / 4);
+}
+
+.prodotti .cards .card img {
+  max-width: 100%;
+  position: relative;
+}
+
+.prodotti .cards .card:hover .info-card {
+  opacity: 1;
+}
+
+.prodotti .cards .card .info-card {
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
