@@ -5,6 +5,11 @@
   font-family: "Piazzolla", serif;
 }
 
+.active {
+  padding: 15px;
+  box-shadow: 0 0 15px #000;
+}
+
 header {
   display: flex;
   justify-content: space-between;
